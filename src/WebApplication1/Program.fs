@@ -8,7 +8,8 @@ open Giraffe
 
 let webApp =
     choose [
-        route "/ping" >=> text "pong"
+        route "/ping" >=> text "pong";
+        route "/" >=> 
     ]
 
 let builder = WebApplication.CreateBuilder()
